@@ -40,10 +40,10 @@ task_heading = Label(frame,text="Tasks",font=("Arial Black",15),bg="#05ff48",fg=
 lbox = Listbox(frame,width=50,height=10,font=("Arial Black",10))
 lbox.place(x=80,y=150)
 
-#del_task_heading = Label(frame,text="Delete Tasks",font=("Arial Black",15),bg="#05ff48",fg="Red").place(x=200,y=360)
 delNol = Label(frame,text="Click on task then press delete button ",bg="#05ff48",font=("Arial Black",10),fg="brown").place(x=50,y=400)
 deletebtn = Button(frame,text="Delete",font=("Arial Black",9),bg="Red",fg="white")
 deletebtn.place(x=300,y=350)
+
 add.bind('<Button-1>',addTask)
 deletebtn.bind('<Button-1>',deleteTask)
 
